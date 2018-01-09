@@ -1,0 +1,25 @@
+---
+title: "ggplot seminar"
+author: "German Novakovskiy"
+date: '9 January 2018  '
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Mpg plot
+
+At first we should load tidyverse library:
+```{r}
+library(tidyverse)
+```
+
+After this we should run this chunk of code in order to build desirable plot:
+```{r cars}
+ggplot(data = mpg, 
+       mapping = aes(x = displ, y = hwy, color = drv, size = class)) +
+  geom_point()
+```
+
