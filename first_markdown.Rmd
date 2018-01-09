@@ -1,8 +1,8 @@
 ---
 title: "First Markdown file"
 author: "German Novakovskiy"
-date: '9 января 2018 г '
-output: html_document
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -28,3 +28,25 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+
+* Fruits
+    * apples
+    * bananas
+    * grapes
+* Vegetables
+    * carrots
+    * brocoli
+
+1. elephants
+2. monkeys
+3. rabbits
+
+[This is a link to GitHub](https://github.com/)
+
+![This is an image of a puppy](http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg)
+
